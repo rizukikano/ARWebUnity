@@ -35,6 +35,7 @@
 <body>
     <!--IMAGETARGETS-->
 		<imagetarget id='pattern' src='targets/pattern.jpg'></imagetarget>
+		<imagetarget id='flower' src='targets/flower.png'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <!-- <video id="webcam-video" muted autoplay playsinline style="width:100%; height:100%; object-fit:cover; position:absolute"></video> -->
@@ -105,9 +106,9 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/Build.data.gz",
-                    frameworkUrl: "Build/Build.framework.js.gz",
-                    codeUrl: "Build/Build.wasm.gz",
+                    dataUrl: "Build/Build.data",
+                    frameworkUrl: "Build/Build.framework.js",
+                    codeUrl: "Build/Build.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "LayanaDev",
                     productName: "WebGLAR",
